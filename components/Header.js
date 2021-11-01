@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header className="md:flex-row flex-col flex py-40 justify-center items-center">
@@ -14,9 +16,11 @@ const Header = () => {
         </p>
 
         {/* Button */}
-        <button className="py-2 px-4 rounded bg-green-700 text-white font-medium  hover:bg-white hover:text-black transition-all duration-150">
-          TESTIMONIALS
-        </button>
+        <Link href="#about">
+          <button className="py-2 px-4 rounded bg-green-700 text-white font-medium  hover:bg-white hover:text-black transition-all duration-150">
+            SEE MORE
+          </button>
+        </Link>
       </div>
       <div className="md:mt-0 mt-10 header__gif hidden md:block">
         <iframe

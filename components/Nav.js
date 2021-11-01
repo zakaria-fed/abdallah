@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav className="m-0 flex h-20 items-center justify-between md:justify-around sm:px-3 px-2">
+    <nav className="bg-gray-900 sticky top-0 z-20 m-0 flex h-20 items-center justify-between md:justify-around sm:px-3 px-2">
       <div className="nav__logo w-36 cursor-pointer">
-        <Link href="/">
+        <Link locale="true" href="/">
           <svg
             viewBox="0 0 283 64"
             fill="none"
@@ -19,25 +19,24 @@ const Nav = () => {
       </div>
 
       {/* Nav Links */}
-      <div className="hidden sm:flex w-80 justify-around items-center font-mono font-semibold cursor-pointer">
-        <Link href="/">
-          <h5>HOME</h5>
+      <div className="hidden sm:flex w-80 justify-evenly md:justify-around items-center font-mono font-semibold cursor-pointer">
+        <Link locale="true" href="/">
+          <h5 className="focus-visible:underline">HOME</h5>
         </Link>
-        <Link href="#about">
+        <Link locale="true" href="#about">
           <h5>ABOUT</h5>
         </Link>
-        <Link href="#testimonials">
-          <h5>TESTIMONIALS</h5>
-        </Link>
-        <Link href="#work">
+        <Link locale="true" href="#work">
           <h5>WORK</h5>
         </Link>
       </div>
 
       {/* Button */}
-      <button className="py-2 px-4 rounded bg-green-700 text-white font-medium  hover:bg-white hover:text-black transition-all duration-150">
-        Let's Talk
-      </button>
+      <Link locale="true" href="#talk">
+        <button className="py-2 px-4 rounded bg-green-700 text-white font-medium  hover:bg-white hover:text-black transition-all duration-150">
+          Let's Talk
+        </button>
+      </Link>
     </nav>
   );
 };

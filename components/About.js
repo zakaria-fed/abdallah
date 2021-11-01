@@ -1,11 +1,13 @@
+import Title from "./Title";
+
 const About = () => {
   return (
-    <section className="my-16 px-9 flex flex-col md:flex-row xl:px-0 justify-center items-center">
+    <section
+      id="about"
+      className="my-24 px-9 py-16 flex flex-col md:flex-row xl:px-0 justify-center items-center"
+    >
       <div className="about__content md:mr-4">
-        <h1 className="font-normal text-5xl w-full">
-          A Little About Me
-          <span className="text-green-400 text-3xl font-bold">.</span>
-        </h1>
+        <Title text="A Little About Me" />
 
         <p className="my-5 max-w-xl">
           A JAM Stack web developer who specializes in JavaScript Technologies,
@@ -83,7 +85,11 @@ const About = () => {
         </div>
       </div>
 
-      <img className="m-auto md:ml-4 md:m-0 my-4 rounded-full w-48 h-48" src="/../Me.jpg" alt="Me" />
+      <img
+        className="m-auto md:ml-4 md:m-0 my-4 rounded-full w-48 h-48"
+        src="/../Me.jpg"
+        alt="Me"
+      />
     </section>
   );
 };

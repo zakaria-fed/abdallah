@@ -1,7 +1,9 @@
 import Head from "next/head";
 import About from "../components/About";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import Work from "../components/Work";
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
         <title>Abdallah Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Nav />
       <Header />
 
@@ -37,7 +40,13 @@ export default function Home() {
 
         {/* About */}
         <About />
+
+        {/* Work */}
+        <Work />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

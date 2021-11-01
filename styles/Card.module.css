@@ -1,0 +1,22 @@
+.card::before {
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-color: green;
+
+  border-radius: 100%;
+}
+
+.card {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(17, 24, 39, 0.938);
+  background-blend-mode: multiply;
+
+  height: 45rem;
+}
